@@ -1,0 +1,205 @@
+@charset "utf-8";
+html {
+   background: url(Lang-Lang-05.jpg) center center / cover no-repeat fixed, black;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   width: 100%;
+   max-width: 1024px;
+   margin: 0px auto;
+
+}
+   
+/* header */
+
+body > header {
+   background:rgb(151, 151, 151);
+}
+
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+/* navigation styles */
+
+nav.links {
+   background-color: rgb(151, 151, 151);
+   clear: both;
+}
+
+nav.links li {
+   color: black;
+   font-size: 1.4em;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+
+nav.links ul li a {
+   display: block;
+   text-align: center;
+    text-decoration: none;
+}
+
+nav.links ul li a#currentPage {
+   background-color: rgb(231, 231, 231);
+   color: white;
+}
+
+nav.links ul li a:visited, nav.links ul li a:link {
+   color: black;
+    text-align:center;
+    
+}
+
+nav.links ul li a:hover, nav.links ul li a:active {
+   background-color: grey;
+   color:rgb(151, 151, 151);
+}
+
+body > section#main > h1 > img {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+body > section#main {
+   background: rgb(231, 231, 231);
+   padding: 20px;
+}
+
+body > section#main > h1 {
+   font-size: 2.5em;
+   line-height: 1.4;
+}
+
+body > section#main ul {
+   list-style-type: disc;
+   line-height: 1.4;
+   padding-left: 40px;
+}
+
+/* article styles */
+
+section#main > article > h1 {
+   font-size: 2em;
+   line-height: 1.4;
+   margin: 15px 0px;
+}
+
+body > section#main > article > h2 {
+   font-size: 1.5em;
+   line-height: 1.4;
+}
+
+body > section#main > article > p {
+   margin: 15px 0px;
+}
+
+body > section#main > article:nth-of-type(n+2) {
+   border-top: 4px solid rgb(121, 121, 121);
+}
+
+body > section#main > article img {
+   
+   display: block;
+   margin: 10px auto;
+   width: 90%;
+}
+
+/* footer */
+
+body > footer {
+   background-color:grey;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+body > header, body > footer {
+   width: 100%;
+}
+
+body > aside {
+   -webkit-flex: 1 1 180px;
+   flex: 1 1 180px;
+}
+
+body > section#main {
+   -webkit-flex: 5 1 301px;
+   flex: 5 1 301px;
+}
+
+
+/* phone, tablet  */
+@media only screen and (min-width: 481px) {
+   
+   section#main > h1 {
+      font-size: 2.5em;
+      letter-spacing: 0.2em;
+      margin-bottom: 40px;
+      text-shadow: black 2px 2px 4px;
+   }
+   
+    nav.links ul {list-style: none;}
+    
+
+    
+   nav.links li {
+      font-size: 1.2em;
+   }
+   
+   nav.links ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+   }
+   
+   nav.links li {
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+   }
+    
+   body > section#main > article img {
+      
+      display: block;
+      float: right;
+      margin: 0px 20px 20px 20px;
+      width: 60%;
+   }
+
+    
+    body > img {
+     display: block;
+     float: right;
+      width: 100%;
+    }
+ 
+    
+/* date left corner */
+ div#dateNow {
+   display: block;
+   position:absolute;
+   top: 20px;
+   left: 55px;   
+   background-color: transparent;
+   border: hidden;
+   color: orange;
+   width: 140px;
+   font-size: 1.8em;
+   line-height: 1.1em;
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   font-weight: normal;
+}
+    
+}
